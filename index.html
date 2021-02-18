@@ -19,32 +19,76 @@
     <link rel="stylesheet" href="css/mainStyle.css" />
     <script defer src="js/main.js"></script>
     <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <!-- We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-   -->
+    <main class="container">
+      <figure class="description__logo-box logo-mobile">
+        <img src="images/logo.svg" alt="" class="description__logo-img" />
+      </figure>
+      <div class="description">
+        <figure class="description__bg-box">
+          <img
+            src="images/bg-pattern-desktop.svg"
+            alt="bg-pattern-desktop"
+            class="description--bg"
+          />
+        </figure>
+        <figure class="description__logo-box logo-desktop">
+          <img src="images/logo.svg" alt="" class="description__logo-img" />
+        </figure>
+        <div class="description--content">
+          <h1 class="heading-1">
+            <span class="first-line">We're</span>
+            <span class="second-line">coming</span>
+            <span class="third-line">soon</span>
+          </h1>
+          <p class="paragraph mt-md">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="mailto:contactpawanjs@gmail.com" class="form mt-md">
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email js-email"
+              placeholder="Email Address"
+            />
+            <figure class="icon-error">
+              <img src="images/icon-error.svg" alt="" class="error-img" />
+            </figure>
+            <button class="btn js-btn">
+              <svg class="btn--icon">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <span class="error error-active">
+              Please provide a valid email
+            </span>
+          </form>
+        </div>
+      </div>
+      <figure class="image-box">
+        <img
+          src="images/hero-desktop.jpg"
+          alt="Image of a girl"
+          class="image-desktop"
+        />
+        <img
+          src="images/hero-mobile.jpg"
+          alt="Image of a girl"
+          class="image-mobile"
+        />
+      </figure>
+    </main>
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/pawanjs">Pawan JS</a>.
       </p>
     </footer>
   </body>
