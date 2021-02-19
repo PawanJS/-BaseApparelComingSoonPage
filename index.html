@@ -47,7 +47,11 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form action="mailto:contactpawanjs@gmail.com" class="form mt-md">
+          <form
+            action="mailto:contactpawanjs@gmail.com"
+            class="form mt-md"
+            id="form"
+          >
             <label for="email"></label>
             <input
               type="email"
@@ -56,7 +60,7 @@
               class="email js-email"
               placeholder="Email Address"
             />
-            <figure class="icon-error">
+            <figure class="icon-error js-error-icon">
               <img src="images/icon-error.svg" alt="" class="error-img" />
             </figure>
             <button class="btn js-btn">
@@ -64,9 +68,7 @@
                 <use xlink:href="images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
-            <span class="error error-active">
-              Please provide a valid email
-            </span>
+            <span class="error js-error"></span>
           </form>
         </div>
       </div>
